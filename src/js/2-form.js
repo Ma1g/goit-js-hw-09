@@ -15,7 +15,7 @@ function onSubmit(event) {
     const email = form.elements.email.value.trim();
     const message = form.elements.message.value.trim();
     if (!email || !message) {
-        alert(`Don't leave empty fields!`);
+        alert(`Dont leave empty fields!`);
         return;
     }
     const data = {
@@ -45,7 +45,7 @@ function loadFromLS(key) {
     try {
         return JSON.parse(zip) || {};
     } catch (error) {
-        console.error('Error parsing JSON from localStorage:', error);
+        console.error('Error parsing JSON from local Storage:', error);
         return {};
     }
 }
